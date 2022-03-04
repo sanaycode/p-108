@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animal Sound Recognizer</title>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@650&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="intereseting.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="col-xs-12 header_div text-center">
+            <h2 style="font-family: 'Dosis', sans-serif;">Sound Controlled Animals</h2>
+            <p style="color:red; font-size: medium; font-family: 'Dosis', sans-serif;">Note: say the words, meow, bark, roar, or moo and the corresponding animals will appear</p>
+        </div>
+        <div class="main_div">
+            <center>
+                <br>
+                <br>
+                <button style="margin-top:10px;"class="btn btn-info" onclick="startClassification()">Start</button>
+                <br>
+                <h4 id="result_count" style="font-family: 'Dosis', sans-serif;"></h4>
+                <h3 id="result_label" style="font-family: 'Dosis', sans-serif;"> Animal detected - </h3>
+                <br>
+                <img id="animal_image" src="ugh.gif" width="300" height="300">
+            </center>
+        </div>
+        <div class="copy_right_footer"> Made by - Sanay Tatipaka</div>
+    </body>
+</html>
